@@ -11,12 +11,12 @@ import java.util.Collections;
 import java.util.stream.Stream;
 
 @Component
-public class Initializer {
+public class Initializer implements CommandLineRunner {
 	
 	 private final GroupRepository repository;
 
 	    public Initializer(GroupRepository repository) {
-	        this.repository = repository;
+	    	this.repository = repository;
 	    }
 
 	    @Override
